@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EducationDetail" representedClassName="EducationDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="degreeType" optional="YES" attributeType="String"/>
+        <attribute name="grade" optional="YES" attributeType="String"/>
+        <attribute name="passingYear" optional="YES" attributeType="String"/>
+        <relationship name="resume" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Resume" inverseName="educationDetails" inverseEntity="Resume"/>
+    </entity>
+    <entity name="Job" representedClassName="Job" syncable="YES" codeGenerationType="class">
+        <attribute name="companyName" optional="YES" attributeType="String"/>
+        <attribute name="duration" optional="YES" attributeType="String"/>
+        <relationship name="resume" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Resume" inverseName="jobs" inverseEntity="Resume"/>
+    </entity>
+    <entity name="ProjectDetail" representedClassName="ProjectDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="projectName" optional="YES" attributeType="String"/>
+        <attribute name="projectSummary" optional="YES" attributeType="String"/>
+        <attribute name="role" optional="YES" attributeType="String"/>
+        <attribute name="teamSize" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="technologiesUsed" optional="YES" attributeType="String"/>
+        <relationship name="resume" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Resume" inverseName="projectDetails" inverseEntity="Resume"/>
+    </entity>
+    <entity name="Resume" representedClassName="Resume" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="careerObjective" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <attribute name="skills" optional="YES" attributeType="String" customClassName="[String]"/>
+        <attribute name="totalYearsExperience" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="educationDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EducationDetail" inverseName="resume" inverseEntity="EducationDetail"/>
+        <relationship name="jobs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Job" inverseName="resume" inverseEntity="Job"/>
+        <relationship name="projectDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectDetail" inverseName="resume" inverseEntity="ProjectDetail"/>
+    </entity>
+    <elements>
+        <element name="Resume" positionX="-8637.232055664062" positionY="-3544.72216796875" width="128" height="193"/>
+        <element name="Job" positionX="-8862.620056152344" positionY="-3352.3095703125" width="128" height="88"/>
+        <element name="EducationDetail" positionX="-8862.209411621094" positionY="-3480.245788574219" width="128" height="103"/>
+        <element name="ProjectDetail" positionX="-8740.561462402344" positionY="-3254.549194335938" width="128" height="133"/>
+    </elements>
 </model>
