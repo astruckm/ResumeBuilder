@@ -13,15 +13,17 @@ class SelectResumeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     @IBAction func createNewResumeTapped(_ sender: UIButton) {
-        print("createNewResumeTapped")
+        let sectionsListVC = SectionsListViewController(nibName: "SectionsListViewController", bundle: nil)
+        self.navigationController?.pushViewController(sectionsListVC, animated: true)
     }
     
     @IBAction func editExistingResume(_ sender: UIButton) {
-        print("editExistingResume")
+        let sectionsListVC = SectionsListViewController(nibName: "SectionsListViewController", bundle: nil)
+        self.navigationController?.pushViewController(sectionsListVC, animated: true)
     }
     
 }

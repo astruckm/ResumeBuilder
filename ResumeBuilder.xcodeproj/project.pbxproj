@@ -16,6 +16,14 @@
 		7249070B27D6414F0009F7DF /* ResumeBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249070A27D6414F0009F7DF /* ResumeBuilderTests.swift */; };
 		7249071527D6414F0009F7DF /* ResumeBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249071427D6414F0009F7DF /* ResumeBuilderUITests.swift */; };
 		7249071727D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249071627D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift */; };
+		7288960E27DBAD2D0051A94C /* SectionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288960C27DBAD2D0051A94C /* SectionsListViewController.swift */; };
+		7288960F27DBAD2D0051A94C /* SectionsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7288960D27DBAD2D0051A94C /* SectionsListViewController.xib */; };
+		7288961327DC027D0051A94C /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288961127DC027D0051A94C /* SectionTableViewCell.swift */; };
+		7288961427DC027D0051A94C /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7288961227DC027D0051A94C /* SectionTableViewCell.xib */; };
+		7288961627DC17C90051A94C /* SectionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288961527DC17C90051A94C /* SectionsListViewModel.swift */; };
+		7288961927DC1AFE0051A94C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288961827DC1AFE0051A94C /* Constants.swift */; };
+		7288961D27DC3FA30051A94C /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288961B27DC3FA30051A94C /* BasicInfoViewController.swift */; };
+		7288961E27DC3FA30051A94C /* BasicInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7288961C27DC3FA30051A94C /* BasicInfoViewController.xib */; };
 		72B8573B27DB945100A5BF23 /* SelectResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B8573927DB945100A5BF23 /* SelectResumeViewController.swift */; };
 		72B8573C27DB945100A5BF23 /* SelectResumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72B8573A27DB945100A5BF23 /* SelectResumeViewController.xib */; };
 /* End PBXBuildFile section */
@@ -51,6 +59,14 @@
 		7249071027D6414F0009F7DF /* ResumeBuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeBuilderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7249071427D6414F0009F7DF /* ResumeBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilderUITests.swift; sourceTree = "<group>"; };
 		7249071627D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7288960C27DBAD2D0051A94C /* SectionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsListViewController.swift; sourceTree = "<group>"; };
+		7288960D27DBAD2D0051A94C /* SectionsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionsListViewController.xib; sourceTree = "<group>"; };
+		7288961127DC027D0051A94C /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		7288961227DC027D0051A94C /* SectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableViewCell.xib; sourceTree = "<group>"; };
+		7288961527DC17C90051A94C /* SectionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsListViewModel.swift; sourceTree = "<group>"; };
+		7288961827DC1AFE0051A94C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7288961B27DC3FA30051A94C /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
+		7288961C27DC3FA30051A94C /* BasicInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicInfoViewController.xib; sourceTree = "<group>"; };
 		72B8573927DB945100A5BF23 /* SelectResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectResumeViewController.swift; sourceTree = "<group>"; };
 		72B8573A27DB945100A5BF23 /* SelectResumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectResumeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,8 +130,10 @@
 			children = (
 				724906F027D6414D0009F7DF /* AppDelegate.swift */,
 				724906F227D6414D0009F7DF /* SceneDelegate.swift */,
-				72B8573927DB945100A5BF23 /* SelectResumeViewController.swift */,
-				72B8573A27DB945100A5BF23 /* SelectResumeViewController.xib */,
+				7288961827DC1AFE0051A94C /* Constants.swift */,
+				7288961727DC1AAA0051A94C /* SelectResume */,
+				7288961027DC02520051A94C /* SectionsList */,
+				7288961A27DC3F780051A94C /* BasicInfo */,
 				724906FC27D6414F0009F7DF /* Assets.xcassets */,
 				724906FE27D6414F0009F7DF /* LaunchScreen.storyboard */,
 				7249070127D6414F0009F7DF /* Info.plist */,
@@ -139,6 +157,36 @@
 				7249071627D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift */,
 			);
 			path = ResumeBuilderUITests;
+			sourceTree = "<group>";
+		};
+		7288961027DC02520051A94C /* SectionsList */ = {
+			isa = PBXGroup;
+			children = (
+				7288960C27DBAD2D0051A94C /* SectionsListViewController.swift */,
+				7288960D27DBAD2D0051A94C /* SectionsListViewController.xib */,
+				7288961127DC027D0051A94C /* SectionTableViewCell.swift */,
+				7288961227DC027D0051A94C /* SectionTableViewCell.xib */,
+				7288961527DC17C90051A94C /* SectionsListViewModel.swift */,
+			);
+			path = SectionsList;
+			sourceTree = "<group>";
+		};
+		7288961727DC1AAA0051A94C /* SelectResume */ = {
+			isa = PBXGroup;
+			children = (
+				72B8573927DB945100A5BF23 /* SelectResumeViewController.swift */,
+				72B8573A27DB945100A5BF23 /* SelectResumeViewController.xib */,
+			);
+			path = SelectResume;
+			sourceTree = "<group>";
+		};
+		7288961A27DC3F780051A94C /* BasicInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7288961B27DC3FA30051A94C /* BasicInfoViewController.swift */,
+				7288961C27DC3FA30051A94C /* BasicInfoViewController.xib */,
+			);
+			path = BasicInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7288961427DC027D0051A94C /* SectionTableViewCell.xib in Resources */,
 				72B8573C27DB945100A5BF23 /* SelectResumeViewController.xib in Resources */,
 				7249070027D6414F0009F7DF /* LaunchScreen.storyboard in Resources */,
+				7288960F27DBAD2D0051A94C /* SectionsListViewController.xib in Resources */,
 				724906FD27D6414F0009F7DF /* Assets.xcassets in Resources */,
+				7288961E27DC3FA30051A94C /* BasicInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +324,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7235DD3327D8F98D00B94410 /* DataController.swift in Sources */,
+				7288961327DC027D0051A94C /* SectionTableViewCell.swift in Sources */,
 				724906F127D6414D0009F7DF /* AppDelegate.swift in Sources */,
+				7288960E27DBAD2D0051A94C /* SectionsListViewController.swift in Sources */,
 				72B8573B27DB945100A5BF23 /* SelectResumeViewController.swift in Sources */,
+				7288961D27DC3FA30051A94C /* BasicInfoViewController.swift in Sources */,
 				724906FB27D6414D0009F7DF /* ResumeBuilder.xcdatamodeld in Sources */,
+				7288961627DC17C90051A94C /* SectionsListViewModel.swift in Sources */,
 				724906F327D6414D0009F7DF /* SceneDelegate.swift in Sources */,
+				7288961927DC1AFE0051A94C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

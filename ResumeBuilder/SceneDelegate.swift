@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let selectResumeVC = SelectResumeViewController()
+        let selectResumeVC = SelectResumeViewController(nibName: "SelectResumeViewController", bundle: nil)
         let navigationController = UINavigationController(rootViewController: selectResumeVC)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

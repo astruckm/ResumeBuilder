@@ -20,34 +20,40 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj2-QI-Vcy">
-                    <rect key="frame" x="127.5" y="487.5" width="159" height="31"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-bI-rVR">
+                    <rect key="frame" x="129" y="377" width="156" height="52"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="31" id="LmH-wq-oXA"/>
-                        <constraint firstAttribute="width" constant="159" id="zWX-t9-dy2"/>
+                        <constraint firstAttribute="height" constant="52" id="wiW-U3-ljI"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Edit Existing Resume"/>
-                    <connections>
-                        <action selector="editExistingResume:" destination="-1" eventType="touchUpInside" id="FaE-Bq-gQT"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-bI-rVR">
-                    <rect key="frame" x="129" y="387.5" width="156" height="31"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="156" id="f38-8s-aLr"/>
-                        <constraint firstAttribute="height" constant="31" id="k4Q-fz-21L"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Create New Resume"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Create New Resume">
+                        <backgroundConfiguration key="background" cornerRadius="16">
+                            <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
                     <connections>
                         <action selector="createNewResumeTapped:" destination="-1" eventType="touchUpInside" id="sEg-Eh-5ve"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj2-QI-Vcy">
+                    <rect key="frame" x="127.5" y="477" width="159" height="52"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Edit Existing Resume">
+                        <backgroundConfiguration key="background" cornerRadius="16" strokeWidth="2">
+                            <color key="strokeColor" red="0.61960784310000006" green="0.10980392160000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="editExistingResume:" destination="-1" eventType="touchUpInside" id="FaE-Bq-gQT"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="Tfb-bI-rVR" firstAttribute="height" secondItem="bj2-QI-Vcy" secondAttribute="height" id="XXP-ej-UlV"/>
                 <constraint firstItem="bj2-QI-Vcy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="b9Q-h0-mop"/>
                 <constraint firstItem="Tfb-bI-rVR" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-50" id="bUp-n7-FZ4"/>
                 <constraint firstItem="bj2-QI-Vcy" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="50" id="fTU-Dh-mZO"/>

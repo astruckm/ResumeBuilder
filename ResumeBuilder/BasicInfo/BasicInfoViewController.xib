@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicInfoViewController" customModule="ResumeBuilder" customModuleProvider="target">
+            <connections>
+                <outlet property="photoContainerView" destination="HFc-L7-qJb" id="VZd-ti-CW6"/>
+                <outlet property="photoImageView" destination="4aq-hj-oTA" id="rtS-FT-ht4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFc-L7-qJb" userLabel="PhotoContainerView">
+                    <rect key="frame" x="114" y="342" width="186" height="268.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4aq-hj-oTA" userLabel="Photo">
+                            <rect key="frame" x="0.0" y="1.5" width="186" height="245.5"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4aq-hj-oTA" secondAttribute="height" multiplier="3:4" id="QtX-nz-aEr"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Tap to Edit Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bec-iL-ljz" userLabel="Edit">
+                            <rect key="frame" x="28" y="248.5" width="130" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="K83-gd-3Fx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bec-iL-ljz" firstAttribute="top" secondItem="4aq-hj-oTA" secondAttribute="bottom" id="0Hz-zX-pfe"/>
+                        <constraint firstItem="4aq-hj-oTA" firstAttribute="top" secondItem="HFc-L7-qJb" secondAttribute="top" id="7YP-eY-x8j"/>
+                        <constraint firstItem="bec-iL-ljz" firstAttribute="centerX" secondItem="HFc-L7-qJb" secondAttribute="centerX" id="83K-PY-EvA"/>
+                        <constraint firstAttribute="bottom" secondItem="bec-iL-ljz" secondAttribute="bottom" constant="4" id="b2J-tl-NF3"/>
+                        <constraint firstItem="4aq-hj-oTA" firstAttribute="leading" secondItem="HFc-L7-qJb" secondAttribute="leading" id="blg-Dj-azC"/>
+                        <constraint firstAttribute="trailing" secondItem="4aq-hj-oTA" secondAttribute="trailing" id="dC8-ev-JBZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfO-qP-A0s" userLabel="NameContainerView">
+                    <rect key="frame" x="31" y="52" width="352" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh1-o9-fCi">
+                            <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSt-rM-Hkf" userLabel="Name Text Field">
+                            <rect key="frame" x="0.0" y="22.5" width="352" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Zh1-o9-fCi" firstAttribute="top" secondItem="cfO-qP-A0s" secondAttribute="top" id="7cn-dG-bjq"/>
+                        <constraint firstItem="gSt-rM-Hkf" firstAttribute="leading" secondItem="Zh1-o9-fCi" secondAttribute="leading" id="Ma6-q2-Noo"/>
+                        <constraint firstItem="gSt-rM-Hkf" firstAttribute="top" secondItem="Zh1-o9-fCi" secondAttribute="bottom" constant="2" id="TUz-KM-Fvq"/>
+                        <constraint firstAttribute="height" constant="60" id="YB2-3I-8na"/>
+                        <constraint firstAttribute="bottom" secondItem="gSt-rM-Hkf" secondAttribute="bottom" id="d9D-ic-iqT"/>
+                        <constraint firstItem="Zh1-o9-fCi" firstAttribute="leading" secondItem="cfO-qP-A0s" secondAttribute="leading" id="nYG-0z-gIZ"/>
+                        <constraint firstItem="gSt-rM-Hkf" firstAttribute="width" secondItem="cfO-qP-A0s" secondAttribute="width" id="yUW-jQ-qOa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NS3-VD-YjW" userLabel="AddressContainerView">
+                    <rect key="frame" x="31" y="118" width="352" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgh-1h-Zcx">
+                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAb-lj-B6u" userLabel="Address Text Field">
+                            <rect key="frame" x="0.0" y="22.5" width="352" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="JAb-lj-B6u" firstAttribute="top" secondItem="cgh-1h-Zcx" secondAttribute="bottom" constant="2" id="2Xd-Gx-yFq"/>
+                        <constraint firstAttribute="height" constant="60" id="7hv-92-hE8"/>
+                        <constraint firstItem="cgh-1h-Zcx" firstAttribute="leading" secondItem="NS3-VD-YjW" secondAttribute="leading" id="9Iu-12-Jta"/>
+                        <constraint firstItem="JAb-lj-B6u" firstAttribute="leading" secondItem="cgh-1h-Zcx" secondAttribute="leading" id="BGR-ep-dlD"/>
+                        <constraint firstItem="cgh-1h-Zcx" firstAttribute="top" secondItem="NS3-VD-YjW" secondAttribute="top" id="YXb-Y8-won"/>
+                        <constraint firstItem="JAb-lj-B6u" firstAttribute="width" secondItem="NS3-VD-YjW" secondAttribute="width" id="c2b-vM-KCd"/>
+                        <constraint firstAttribute="bottom" secondItem="JAb-lj-B6u" secondAttribute="bottom" id="hBf-c8-UCn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3J-gS-MWJ" userLabel="PhoneNumberContainerView">
+                    <rect key="frame" x="31" y="184" width="352" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ay-J3-dIq" userLabel="Phone Number">
+                            <rect key="frame" x="0.0" y="0.0" width="114.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1G-TJ-aOz" userLabel="Phone Number Text Field">
+                            <rect key="frame" x="0.0" y="22.5" width="352" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0Ri-No-psH"/>
+                        <constraint firstItem="v1G-TJ-aOz" firstAttribute="width" secondItem="m3J-gS-MWJ" secondAttribute="width" id="2aX-vQ-9p9"/>
+                        <constraint firstItem="9ay-J3-dIq" firstAttribute="top" secondItem="m3J-gS-MWJ" secondAttribute="top" id="7wq-Ad-OcH"/>
+                        <constraint firstAttribute="bottom" secondItem="v1G-TJ-aOz" secondAttribute="bottom" id="O5e-OF-l9e"/>
+                        <constraint firstItem="v1G-TJ-aOz" firstAttribute="leading" secondItem="9ay-J3-dIq" secondAttribute="leading" id="S4V-qi-3Ba"/>
+                        <constraint firstItem="9ay-J3-dIq" firstAttribute="leading" secondItem="m3J-gS-MWJ" secondAttribute="leading" id="dy1-CN-E5o"/>
+                        <constraint firstItem="v1G-TJ-aOz" firstAttribute="top" secondItem="9ay-J3-dIq" secondAttribute="bottom" constant="2" id="ic4-LG-FKT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEG-LP-HlO" userLabel="EmailContainerView">
+                    <rect key="frame" x="31" y="250" width="352" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Li-72-hkR" userLabel="Email">
+                            <rect key="frame" x="0.0" y="0.0" width="41" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UH2-gf-aji" userLabel="Email Text Field">
+                            <rect key="frame" x="0.0" y="22.5" width="352" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UH2-gf-aji" secondAttribute="bottom" id="2L7-my-qjb"/>
+                        <constraint firstItem="0Li-72-hkR" firstAttribute="top" secondItem="aEG-LP-HlO" secondAttribute="top" id="6bs-4u-yZ2"/>
+                        <constraint firstItem="UH2-gf-aji" firstAttribute="leading" secondItem="0Li-72-hkR" secondAttribute="leading" id="Ofn-nU-m8q"/>
+                        <constraint firstAttribute="height" constant="60" id="Rng-Ca-8w3"/>
+                        <constraint firstItem="UH2-gf-aji" firstAttribute="top" secondItem="0Li-72-hkR" secondAttribute="bottom" constant="2" id="TJF-xb-J0m"/>
+                        <constraint firstItem="0Li-72-hkR" firstAttribute="leading" secondItem="aEG-LP-HlO" secondAttribute="leading" id="hMu-Zv-za6"/>
+                        <constraint firstItem="UH2-gf-aji" firstAttribute="width" secondItem="aEG-LP-HlO" secondAttribute="width" id="se6-ep-h7m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NS3-VD-YjW" firstAttribute="centerX" secondItem="cfO-qP-A0s" secondAttribute="centerX" id="2Fd-gP-TFc"/>
+                <constraint firstItem="HFc-L7-qJb" firstAttribute="height" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="6ZG-hz-orc"/>
+                <constraint firstItem="m3J-gS-MWJ" firstAttribute="centerX" secondItem="NS3-VD-YjW" secondAttribute="centerX" id="CLg-UJ-W3e"/>
+                <constraint firstItem="m3J-gS-MWJ" firstAttribute="width" secondItem="NS3-VD-YjW" secondAttribute="width" id="MvQ-HW-ZrF"/>
+                <constraint firstItem="HFc-L7-qJb" firstAttribute="top" secondItem="aEG-LP-HlO" secondAttribute="bottom" constant="32" id="Ndm-w5-iea"/>
+                <constraint firstItem="NS3-VD-YjW" firstAttribute="top" secondItem="cfO-qP-A0s" secondAttribute="bottom" constant="6" id="PPa-Gf-lds"/>
+                <constraint firstItem="cfO-qP-A0s" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.85" id="Whv-YA-ELc"/>
+                <constraint firstItem="aEG-LP-HlO" firstAttribute="centerX" secondItem="m3J-gS-MWJ" secondAttribute="centerX" id="ZY3-yf-daV"/>
+                <constraint firstItem="NS3-VD-YjW" firstAttribute="width" secondItem="cfO-qP-A0s" secondAttribute="width" id="cdR-SJ-G2F"/>
+                <constraint firstItem="HFc-L7-qJb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="e1a-oT-0dG"/>
+                <constraint firstItem="HFc-L7-qJb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.45" id="eAl-pY-y5h"/>
+                <constraint firstItem="m3J-gS-MWJ" firstAttribute="top" secondItem="NS3-VD-YjW" secondAttribute="bottom" constant="6" id="mD4-xW-9ur"/>
+                <constraint firstItem="aEG-LP-HlO" firstAttribute="width" secondItem="m3J-gS-MWJ" secondAttribute="width" id="pHh-1S-FNb"/>
+                <constraint firstItem="cfO-qP-A0s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="rev-Y8-wIg"/>
+                <constraint firstItem="cfO-qP-A0s" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="uJK-Tb-5rm"/>
+                <constraint firstItem="aEG-LP-HlO" firstAttribute="top" secondItem="m3J-gS-MWJ" secondAttribute="bottom" constant="6" id="v8Q-Ws-kLY"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
