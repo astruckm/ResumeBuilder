@@ -23,7 +23,9 @@ class SectionsListViewController: UIViewController {
         case .basicInfo:
             let basicInfoVC = BasicInfoViewController(nibName: "BasicInfoViewController", bundle: nil)
             navigationController?.pushViewController(basicInfoVC, animated: true)
-        case .career: break
+        case .career:
+            let careerVC = CareerViewController(nibName: "CareerViewController", bundle: nil)
+            navigationController?.pushViewController(careerVC, animated: true)
         case .education: break
         case .skills: break
         case .projects: break

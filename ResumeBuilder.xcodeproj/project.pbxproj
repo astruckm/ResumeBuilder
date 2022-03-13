@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722755EE27DDD39D00F4D5A1 /* BasicInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722755ED27DDD39D00F4D5A1 /* BasicInfoViewModel.swift */; };
 		7235DD3327D8F98D00B94410 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235DD3227D8F98D00B94410 /* DataController.swift */; };
 		724906F127D6414D0009F7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724906F027D6414D0009F7DF /* AppDelegate.swift */; };
 		724906F327D6414D0009F7DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724906F227D6414D0009F7DF /* SceneDelegate.swift */; };
@@ -24,6 +25,12 @@
 		7288961927DC1AFE0051A94C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288961827DC1AFE0051A94C /* Constants.swift */; };
 		7288961D27DC3FA30051A94C /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288961B27DC3FA30051A94C /* BasicInfoViewController.swift */; };
 		7288961E27DC3FA30051A94C /* BasicInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7288961C27DC3FA30051A94C /* BasicInfoViewController.xib */; };
+		7288962327DC99CD0051A94C /* CareerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288962127DC99CD0051A94C /* CareerViewController.swift */; };
+		7288962427DC99CD0051A94C /* CareerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7288962227DC99CD0051A94C /* CareerViewController.xib */; };
+		7288962627DCD2990051A94C /* CareerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288962527DCD2990051A94C /* CareerViewModel.swift */; };
+		7288962827DCD8D20051A94C /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288962727DCD8D20051A94C /* UITextField+Extensions.swift */; };
+		7288963427DCEC390051A94C /* PositionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288963227DCEC390051A94C /* PositionTableViewCell.swift */; };
+		7288963527DCEC390051A94C /* PositionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7288963327DCEC390051A94C /* PositionTableViewCell.xib */; };
 		72B8573B27DB945100A5BF23 /* SelectResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B8573927DB945100A5BF23 /* SelectResumeViewController.swift */; };
 		72B8573C27DB945100A5BF23 /* SelectResumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72B8573A27DB945100A5BF23 /* SelectResumeViewController.xib */; };
 /* End PBXBuildFile section */
@@ -46,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		722755ED27DDD39D00F4D5A1 /* BasicInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewModel.swift; sourceTree = "<group>"; };
 		7235DD3227D8F98D00B94410 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		724906ED27D6414D0009F7DF /* ResumeBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724906F027D6414D0009F7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +75,12 @@
 		7288961827DC1AFE0051A94C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7288961B27DC3FA30051A94C /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
 		7288961C27DC3FA30051A94C /* BasicInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicInfoViewController.xib; sourceTree = "<group>"; };
+		7288962127DC99CD0051A94C /* CareerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerViewController.swift; sourceTree = "<group>"; };
+		7288962227DC99CD0051A94C /* CareerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareerViewController.xib; sourceTree = "<group>"; };
+		7288962527DCD2990051A94C /* CareerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerViewModel.swift; sourceTree = "<group>"; };
+		7288962727DCD8D20051A94C /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		7288963227DCEC390051A94C /* PositionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionTableViewCell.swift; sourceTree = "<group>"; };
+		7288963327DCEC390051A94C /* PositionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositionTableViewCell.xib; sourceTree = "<group>"; };
 		72B8573927DB945100A5BF23 /* SelectResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectResumeViewController.swift; sourceTree = "<group>"; };
 		72B8573A27DB945100A5BF23 /* SelectResumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectResumeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,13 +145,14 @@
 				724906F027D6414D0009F7DF /* AppDelegate.swift */,
 				724906F227D6414D0009F7DF /* SceneDelegate.swift */,
 				7288961827DC1AFE0051A94C /* Constants.swift */,
+				7288962927DCD8DB0051A94C /* Extensions */,
 				7288961727DC1AAA0051A94C /* SelectResume */,
 				7288961027DC02520051A94C /* SectionsList */,
 				7288961A27DC3F780051A94C /* BasicInfo */,
-				724906FC27D6414F0009F7DF /* Assets.xcassets */,
-				724906FE27D6414F0009F7DF /* LaunchScreen.storyboard */,
-				7249070127D6414F0009F7DF /* Info.plist */,
+				7288961F27DC995A0051A94C /* Career */,
 				7235DD3127D8F97500B94410 /* Persistence */,
+				7288962027DC996A0051A94C /* Support Files */,
+				7249070127D6414F0009F7DF /* Info.plist */,
 			);
 			path = ResumeBuilder;
 			sourceTree = "<group>";
@@ -184,9 +199,39 @@
 			isa = PBXGroup;
 			children = (
 				7288961B27DC3FA30051A94C /* BasicInfoViewController.swift */,
+				722755ED27DDD39D00F4D5A1 /* BasicInfoViewModel.swift */,
 				7288961C27DC3FA30051A94C /* BasicInfoViewController.xib */,
 			);
 			path = BasicInfo;
+			sourceTree = "<group>";
+		};
+		7288961F27DC995A0051A94C /* Career */ = {
+			isa = PBXGroup;
+			children = (
+				7288962127DC99CD0051A94C /* CareerViewController.swift */,
+				7288962527DCD2990051A94C /* CareerViewModel.swift */,
+				7288962227DC99CD0051A94C /* CareerViewController.xib */,
+				7288963227DCEC390051A94C /* PositionTableViewCell.swift */,
+				7288963327DCEC390051A94C /* PositionTableViewCell.xib */,
+			);
+			path = Career;
+			sourceTree = "<group>";
+		};
+		7288962027DC996A0051A94C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				724906FC27D6414F0009F7DF /* Assets.xcassets */,
+				724906FE27D6414F0009F7DF /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		7288962927DCD8DB0051A94C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7288962727DCD8D20051A94C /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,9 +340,11 @@
 			files = (
 				7288961427DC027D0051A94C /* SectionTableViewCell.xib in Resources */,
 				72B8573C27DB945100A5BF23 /* SelectResumeViewController.xib in Resources */,
+				7288963527DCEC390051A94C /* PositionTableViewCell.xib in Resources */,
 				7249070027D6414F0009F7DF /* LaunchScreen.storyboard in Resources */,
 				7288960F27DBAD2D0051A94C /* SectionsListViewController.xib in Resources */,
 				724906FD27D6414F0009F7DF /* Assets.xcassets in Resources */,
+				7288962427DC99CD0051A94C /* CareerViewController.xib in Resources */,
 				7288961E27DC3FA30051A94C /* BasicInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,15 +370,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722755EE27DDD39D00F4D5A1 /* BasicInfoViewModel.swift in Sources */,
+				7288963427DCEC390051A94C /* PositionTableViewCell.swift in Sources */,
+				7288962827DCD8D20051A94C /* UITextField+Extensions.swift in Sources */,
 				7235DD3327D8F98D00B94410 /* DataController.swift in Sources */,
 				7288961327DC027D0051A94C /* SectionTableViewCell.swift in Sources */,
 				724906F127D6414D0009F7DF /* AppDelegate.swift in Sources */,
 				7288960E27DBAD2D0051A94C /* SectionsListViewController.swift in Sources */,
 				72B8573B27DB945100A5BF23 /* SelectResumeViewController.swift in Sources */,
 				7288961D27DC3FA30051A94C /* BasicInfoViewController.swift in Sources */,
+				7288962327DC99CD0051A94C /* CareerViewController.swift in Sources */,
 				724906FB27D6414D0009F7DF /* ResumeBuilder.xcdatamodeld in Sources */,
 				7288961627DC17C90051A94C /* SectionsListViewModel.swift in Sources */,
 				724906F327D6414D0009F7DF /* SceneDelegate.swift in Sources */,
+				7288962627DCD2990051A94C /* CareerViewModel.swift in Sources */,
 				7288961927DC1AFE0051A94C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +558,7 @@
 				DEVELOPMENT_TEAM = 48535654Y7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ResumeBuilder/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ResumeBuilder needs to access to your camera to take a photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -533,6 +586,7 @@
 				DEVELOPMENT_TEAM = 48535654Y7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ResumeBuilder/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ResumeBuilder needs to access to your camera to take a photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
