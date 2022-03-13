@@ -23,7 +23,6 @@ class CareerViewController: UIViewController {
         positionsTableView.register(UINib(nibName: "PositionTableViewCell", bundle: nil), forCellReuseIdentifier: PositionTableViewCell.reuseID)
         objectiveTextField.delegate = self
         setupUI()
-        loadData()
     }
     
     func setupUI() {
@@ -36,11 +35,7 @@ class CareerViewController: UIViewController {
         yearsExperience.configuration?.imagePadding = 12
         addPosition.configuration?.imagePadding = 12
     }
-    
-    func loadData() {
         
-    }
-    
     @objc func saveButtonTapped() {
         navigationController?.popViewController(animated: true)
     }
