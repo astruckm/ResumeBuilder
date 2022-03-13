@@ -20,6 +20,11 @@ class ProjectsViewController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.loadData()
+    }
+    
     func setup() {
         navigationItem.title = "Projects"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "checkmark.circle"),
@@ -28,6 +33,7 @@ class ProjectsViewController: UIViewController {
                                                             action: #selector(saveButtonTapped))
         viewModel.refresh = {
             DispatchQueue.main.async {
+                self.projectsTableViewHeight.constant = self.viewModel.tableViewHeight
                 self.projectsTableView.reloadData()
             }
         }
@@ -36,6 +42,7 @@ class ProjectsViewController: UIViewController {
     }
     
     @objc func saveButtonTapped() {
+        viewModel.saveData()
         navigationController?.popViewController(animated: true)
     }
 

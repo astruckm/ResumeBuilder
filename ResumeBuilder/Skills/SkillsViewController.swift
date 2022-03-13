@@ -19,6 +19,11 @@ class SkillsViewController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.loadData()
+    }
+    
     func setup() {
         navigationItem.title = "Skills"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "checkmark.circle"),
@@ -35,6 +40,7 @@ class SkillsViewController: UIViewController {
     }
     
     @objc func saveButtonTapped() {
+        viewModel.saveData()
         navigationController?.popViewController(animated: true)
     }
 

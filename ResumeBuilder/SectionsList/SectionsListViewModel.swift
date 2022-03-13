@@ -14,6 +14,7 @@ class SectionsListViewModel {
         case skills = "Skills"
         case education = "Education"
         case projects = "Projects"
+        case preview = "Preview"
     }
     
     

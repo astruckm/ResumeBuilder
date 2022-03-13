@@ -16,7 +16,14 @@ class SectionsListViewController: UIViewController {
         super.viewDidLoad()
 
         sectionListTableView.register(UINib(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: SectionTableViewCell.reuseID)
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "checkmark.circle"),
+                                                            style: .done,
+                                                            target: self,
+                                                            action: #selector(viewPreview))
+    }
+    
+    @objc func viewPreview() {
+        coordinateNavigation(for: .preview)
     }
     
     func coordinateNavigation(for screenType: SectionsListViewModel.SectionType) {
@@ -36,6 +43,9 @@ class SectionsListViewController: UIViewController {
         case .projects:
             let projectsVC = ProjectsViewController(nibName: "ProjectsViewController", bundle: nil)
             navigationController?.pushViewController(projectsVC, animated: true)
+        case .preview:
+            let previewVC = PreviewViewController(nibName: "PreviewViewController", bundle: nil)
+            navigationController?.pushViewController(previewVC, animated: true)
         }
     }
     

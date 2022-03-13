@@ -21,13 +21,32 @@ class BasicInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.loadData()
+    }
+    
+    func setup() {
         navigationItem.title = "Basic Info"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "checkmark.circle"), style: .done, target: self, action: #selector(saveButtonTapped))
         let photoTap = UITapGestureRecognizer(target: self, action: #selector(photoContainerTapped))
         photoContainerView.addGestureRecognizer(photoTap)
+        viewModel.reloadUI = {
+            DispatchQueue.main.async {
+                self.nameTextField.text = self.viewModel.name
+                self.addressTextField.text = self.viewModel.address
+                self.phoneNumberTextField.text = self.viewModel.phoneNumber
+                self.emailTextField.text = self.viewModel.email
+                self.photoImageView.image = self.viewModel.photo ?? self.photoImageView.image
+            }
+        }
     }
 
     @objc func saveButtonTapped() {
+        viewModel.saveData()
         navigationController?.popViewController(animated: true)
     }
     

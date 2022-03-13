@@ -37,4 +37,13 @@ class ProjectsViewModel {
         }
         refresh?()
     }
+    
+    func saveData() {
+        DefaultsManager.saveProjects(projects)
+    }
+    
+    func loadData() {
+        projects = DefaultsManager.loadProjects()
+        refresh?()
+    }
 }

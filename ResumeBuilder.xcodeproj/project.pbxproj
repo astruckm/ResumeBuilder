@@ -26,6 +26,7 @@
 		7227561327DE0ACC00F4D5A1 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227561127DE0ACC00F4D5A1 /* PreviewViewController.swift */; };
 		7227561427DE0ACC00F4D5A1 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7227561227DE0ACC00F4D5A1 /* PreviewViewController.xib */; };
 		7227561727DE0DB800F4D5A1 /* PickerDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227561627DE0DB800F4D5A1 /* PickerDataType.swift */; };
+		7227561B27DE7F3500F4D5A1 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227561A27DE7F3500F4D5A1 /* DefaultsManager.swift */; };
 		7235DD3327D8F98D00B94410 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235DD3227D8F98D00B94410 /* DataController.swift */; };
 		724906F127D6414D0009F7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724906F027D6414D0009F7DF /* AppDelegate.swift */; };
 		724906F327D6414D0009F7DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724906F227D6414D0009F7DF /* SceneDelegate.swift */; };
@@ -90,6 +91,7 @@
 		7227561127DE0ACC00F4D5A1 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		7227561227DE0ACC00F4D5A1 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		7227561627DE0DB800F4D5A1 /* PickerDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataType.swift; sourceTree = "<group>"; };
+		7227561A27DE7F3500F4D5A1 /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		7235DD3227D8F98D00B94410 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		724906ED27D6414D0009F7DF /* ResumeBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724906F027D6414D0009F7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				724906F927D6414D0009F7DF /* ResumeBuilder.xcdatamodeld */,
 				7235DD3227D8F98D00B94410 /* DataController.swift */,
+				7227561A27DE7F3500F4D5A1 /* DefaultsManager.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				7288962627DCD2990051A94C /* CareerViewModel.swift in Sources */,
 				7227561327DE0ACC00F4D5A1 /* PreviewViewController.swift in Sources */,
 				7288961927DC1AFE0051A94C /* Constants.swift in Sources */,
+				7227561B27DE7F3500F4D5A1 /* DefaultsManager.swift in Sources */,
 				7227561727DE0DB800F4D5A1 /* PickerDataType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

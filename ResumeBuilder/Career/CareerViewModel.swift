@@ -27,7 +27,8 @@ class CareerViewModel {
     var objective: String?
     var selectedYearsExperience: Int?
     var positions: [WorkPosition] = []
-
+    var reloadUI: (() -> Void)?
+    
     // MARK: State
     var pickerDataType: PickerDataType = .yearsExperience
     var currentPositionIndex: Int?
@@ -74,4 +75,16 @@ class CareerViewModel {
         positions[indexPath.row].title = text
     }
     
+    func saveData() {
+        UserDefaults.standard.set(objective, forKey: DefaultsKeys.objective)
+        UserDefaults.standard.set(selectedYearsExperience, forKey: DefaultsKeys.yearsExperience)
+        DefaultsManager.saveWorkPositions(positions)
+    }
+    
+    func loadData() {
+        objective = UserDefaults.standard.string(forKey: DefaultsKeys.objective)
+        selectedYearsExperience = Int(UserDefaults.standard.integer(forKey: DefaultsKeys.yearsExperience))
+        self.positions = DefaultsManager.loadWorkPositions()
+        reloadUI?()
+    }
 }

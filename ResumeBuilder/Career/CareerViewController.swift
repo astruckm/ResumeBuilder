@@ -21,8 +21,24 @@ class CareerViewController: UIViewController {
         super.viewDidLoad()
 
         positionsTableView.register(UINib(nibName: "PositionTableViewCell", bundle: nil), forCellReuseIdentifier: PositionTableViewCell.reuseID)
+        viewModel.reloadUI = {
+            DispatchQueue.main.async {
+                self.objectiveTextField.text = self.viewModel.objective
+                if let selectedYearsExperience = self.viewModel.selectedYearsExperience {
+                    self.yearsExperience.setTitle(String(selectedYearsExperience), for: .normal)
+                    self.yearsExperience.setImage(UIImage(), for: .normal)
+                }
+                self.positionsTableViewHeight.constant = self.viewModel.positionsTableViewHeight
+                self.positionsTableView.reloadData()
+            }
+        }
         objectiveTextField.delegate = self
         setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.loadData()
     }
     
     func setupUI() {
@@ -37,6 +53,7 @@ class CareerViewController: UIViewController {
     }
         
     @objc func saveButtonTapped() {
+        viewModel.saveData()
         navigationController?.popViewController(animated: true)
     }
 

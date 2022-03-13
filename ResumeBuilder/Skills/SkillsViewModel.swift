@@ -16,4 +16,15 @@ class SkillsViewModel {
         skills.append(text)
         refresh?()
     }
+    
+    func saveData() {
+        UserDefaults.standard.set(skills, forKey: DefaultsKeys.skills)
+    }
+    
+    func loadData() {
+        if let skills = UserDefaults.standard.value(forKey: DefaultsKeys.skills) as? [String] {
+            self.skills = skills
+            refresh?()
+        }
+    }
 }

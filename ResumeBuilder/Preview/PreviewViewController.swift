@@ -12,7 +12,11 @@ class PreviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(onDone))
+    }
+    
+    @objc func onDone() {
+        self.dismiss(animated: true)
     }
 
 

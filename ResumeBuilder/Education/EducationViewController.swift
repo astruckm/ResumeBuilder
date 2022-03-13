@@ -20,6 +20,11 @@ class EducationViewController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.loadData()
+    }
+    
     func setup() {
         navigationItem.title = "Education"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "checkmark.circle"),
@@ -28,6 +33,7 @@ class EducationViewController: UIViewController {
                                                             action: #selector(saveButtonTapped))
         viewModel.refresh = {
             DispatchQueue.main.async {
+                self.educationTableViewHeight.constant = self.viewModel.tableViewHeight
                 self.educationTableView.reloadData()
             }
         }
@@ -42,6 +48,7 @@ class EducationViewController: UIViewController {
     }
     
     @objc func saveButtonTapped() {
+        viewModel.saveData()
         navigationController?.popViewController(animated: true)
     }
     

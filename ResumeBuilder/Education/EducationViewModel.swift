@@ -66,5 +66,14 @@ class EducationViewModel {
         
         refresh?()
     }
+    
+    func saveData() {
+        DefaultsManager.saveDegrees(degrees)
+    }
+    
+    func loadData() {
+        degrees = DefaultsManager.loadDegrees()
+        refresh?()
+    }
 
 }

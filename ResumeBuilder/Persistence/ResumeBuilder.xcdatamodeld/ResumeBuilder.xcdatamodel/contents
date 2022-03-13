@@ -25,6 +25,7 @@
         <attribute name="address" optional="YES" attributeType="String"/>
         <attribute name="careerObjective" optional="YES" attributeType="String"/>
         <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String"/>
         <attribute name="photo" optional="YES" attributeType="Binary"/>
         <attribute name="skills" optional="YES" attributeType="String" customClassName="[String]"/>
@@ -37,6 +38,6 @@
         <element name="EducationDetail" positionX="-8862.209411621094" positionY="-3480.245788574219" width="128" height="119"/>
         <element name="Job" positionX="-8862.620056152344" positionY="-3352.3095703125" width="128" height="88"/>
         <element name="ProjectDetail" positionX="-8740.561462402344" positionY="-3254.549194335938" width="128" height="133"/>
-        <element name="Resume" positionX="-8637.232055664062" positionY="-3544.72216796875" width="128" height="193"/>
+        <element name="Resume" positionX="-8637.232055664062" positionY="-3544.72216796875" width="128" height="194"/>
     </elements>
 </model>
