@@ -16,11 +16,9 @@ class SectionsListViewController: UIViewController {
         super.viewDidLoad()
 
         sectionListTableView.register(UINib(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: SectionTableViewCell.reuseID)
+        
     }
     
-    @IBAction func previewTapped(_ sender: UIButton) {
-    }
-
     func coordinateNavigation(for screenType: SectionsListViewModel.SectionType) {
         switch screenType {
         case .basicInfo:
