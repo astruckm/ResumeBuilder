@@ -43,12 +43,12 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-oO-PLy" userLabel="Start Container View">
-                        <rect key="frame" x="103" y="0.0" width="128" height="72"/>
+                        <rect key="frame" x="99" y="0.0" width="128" height="72"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THx-fb-hfZ">
-                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="34.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="93" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="Start Month">
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="Month">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -56,9 +56,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEp-Wk-vdy">
-                                <rect key="frame" x="0.0" y="38.5" width="126.5" height="34.5"/>
+                                <rect key="frame" x="0.0" y="38.5" width="93" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="End Month">
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="Month">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -76,12 +76,12 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aki-sf-GOo" userLabel="End Container View">
-                        <rect key="frame" x="239" y="0.0" width="100" height="72"/>
+                        <rect key="frame" x="227" y="0.0" width="100" height="72"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4K-K8-cIh" userLabel="Start Year">
-                                <rect key="frame" x="0.0" y="0.0" width="119" height="34.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="78" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="Start Year">
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="Year">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -89,9 +89,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrU-nC-Oxm">
-                                <rect key="frame" x="0.0" y="38.5" width="111.5" height="35"/>
+                                <rect key="frame" x="0.0" y="38.5" width="78" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="End Year">
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="Year">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -103,7 +103,6 @@
                         <constraints>
                             <constraint firstItem="JrU-nC-Oxm" firstAttribute="leading" secondItem="h4K-K8-cIh" secondAttribute="leading" id="80w-pV-IlD"/>
                             <constraint firstItem="h4K-K8-cIh" firstAttribute="leading" secondItem="aki-sf-GOo" secondAttribute="leading" id="A9V-xE-XdP"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="E5A-bm-9Fc"/>
                             <constraint firstItem="JrU-nC-Oxm" firstAttribute="top" secondItem="h4K-K8-cIh" secondAttribute="bottom" constant="4" id="Qkj-h0-Fou"/>
                             <constraint firstItem="h4K-K8-cIh" firstAttribute="top" secondItem="aki-sf-GOo" secondAttribute="top" id="eFT-Fc-Euz"/>
                             <constraint firstAttribute="width" constant="100" id="g8X-sH-Ia4"/>
@@ -132,11 +131,11 @@
                     <constraint firstItem="Gwd-Hl-dd7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5PQ-ll-KYD"/>
                     <constraint firstItem="bYe-NX-t7W" firstAttribute="top" secondItem="Gwd-Hl-dd7" secondAttribute="bottom" constant="12" id="5Yk-zW-Klc"/>
                     <constraint firstItem="f6s-80-Ksh" firstAttribute="centerY" secondItem="bYe-NX-t7W" secondAttribute="centerY" id="C7P-Ee-b1Y"/>
-                    <constraint firstItem="pdv-oO-PLy" firstAttribute="leading" secondItem="Gwd-Hl-dd7" secondAttribute="trailing" constant="8" id="MPI-Vq-nbU"/>
+                    <constraint firstItem="pdv-oO-PLy" firstAttribute="leading" secondItem="Gwd-Hl-dd7" secondAttribute="trailing" constant="4" id="MPI-Vq-nbU"/>
                     <constraint firstAttribute="bottom" secondItem="Gwd-Hl-dd7" secondAttribute="bottom" constant="84" id="MoM-VW-RMY"/>
                     <constraint firstItem="pdv-oO-PLy" firstAttribute="bottom" secondItem="Gwd-Hl-dd7" secondAttribute="bottom" id="VZN-5i-syx"/>
                     <constraint firstItem="aki-sf-GOo" firstAttribute="bottom" secondItem="Gwd-Hl-dd7" secondAttribute="bottom" id="Z0w-lW-2yh"/>
-                    <constraint firstItem="aki-sf-GOo" firstAttribute="leading" secondItem="pdv-oO-PLy" secondAttribute="trailing" constant="8" id="b2U-Qb-yrJ"/>
+                    <constraint firstItem="aki-sf-GOo" firstAttribute="leading" secondItem="pdv-oO-PLy" secondAttribute="trailing" id="b2U-Qb-yrJ"/>
                     <constraint firstItem="f6s-80-Ksh" firstAttribute="leading" secondItem="Gwd-Hl-dd7" secondAttribute="leading" constant="4" id="bE0-sq-2PC"/>
                     <constraint firstItem="aki-sf-GOo" firstAttribute="top" secondItem="Gwd-Hl-dd7" secondAttribute="top" id="dXA-cO-lSN"/>
                     <constraint firstItem="pdv-oO-PLy" firstAttribute="top" secondItem="Gwd-Hl-dd7" secondAttribute="top" id="rKj-he-ykK"/>

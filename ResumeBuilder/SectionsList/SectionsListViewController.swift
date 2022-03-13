@@ -56,7 +56,11 @@ extension SectionsListViewController: UITableViewDataSource {
 }
 
 extension SectionsListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
         guard indexPath.row < SectionsListViewModel.SectionType.allCases.count else { return }
         let sectionType = SectionsListViewModel.SectionType.allCases[indexPath.row]
         coordinateNavigation(for: sectionType)

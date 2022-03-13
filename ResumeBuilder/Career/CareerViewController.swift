@@ -21,6 +21,7 @@ class CareerViewController: UIViewController {
         super.viewDidLoad()
 
         positionsTableView.register(UINib(nibName: "PositionTableViewCell", bundle: nil), forCellReuseIdentifier: PositionTableViewCell.reuseID)
+        objectiveTextField.delegate = self
         setupUI()
         loadData()
     }
@@ -43,7 +44,6 @@ class CareerViewController: UIViewController {
     @objc func saveButtonTapped() {
         navigationController?.popViewController(animated: true)
     }
-
 
     @IBAction func yearsExperienceTapped(_ sender: UIButton) {
         viewModel.onYearsExperienceTap()
@@ -80,8 +80,8 @@ class CareerViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
         view.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
 }
 

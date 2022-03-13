@@ -110,6 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		722755EF27DDE89B00F4D5A1 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
 		7235DD3127D8F97500B94410 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +157,7 @@
 				7288961027DC02520051A94C /* SectionsList */,
 				7288961A27DC3F780051A94C /* BasicInfo */,
 				7288961F27DC995A0051A94C /* Career */,
+				722755EF27DDE89B00F4D5A1 /* Skills */,
 				7235DD3127D8F97500B94410 /* Persistence */,
 				7288962027DC996A0051A94C /* Support Files */,
 				7249070127D6414F0009F7DF /* Info.plist */,
