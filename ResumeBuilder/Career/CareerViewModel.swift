@@ -16,25 +16,6 @@ struct WorkPosition: Equatable {
     var title: String?
 }
 
-enum PickerDataType: Equatable {
-    case yearsExperience
-    case month(RangeType)
-    case year(RangeType)
-    
-    enum RangeType: String {
-        case starting, ending
-    }
-    
-    var rowTitles: [String] {
-        switch self {
-        case .yearsExperience: return (0...30).map { String($0) }
-        case .month: return Calendar.current.monthSymbols
-        case .year: return (1980...2022).reversed().map { String($0) }
-        }
-    }
-    
-}
-
 class CareerViewModel {
     // MARK: UI Constants
     let positionRowHeight: CGFloat = 160
@@ -83,7 +64,9 @@ class CareerViewModel {
             case .ending:
                 positions[currentPositionIndex].endingYear = title
             }
+        case .educationStatus: break
         }
+        
     }
     
     func onPositionTextCommit(at indexPath: IndexPath, text: String) {

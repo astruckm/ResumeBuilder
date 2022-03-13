@@ -28,6 +28,15 @@ class PositionTableViewCell: UITableViewCell {
         self.onDateTapped = onDateTapped
         self.companyPosition.delegate = self
         self.onTextCommitted = onTextCommitted
+        self.setImages(with: viewData)
+    }
+    
+    func setImages(with viewData: WorkPosition) {
+        let downArrow: UIImage? = UIImage(systemName: "chevron.down")
+        self.startMonth.setImage(viewData.startingMonth == nil ? downArrow : UIImage(), for: .normal)
+        self.endMonth.setImage(viewData.endingMonth == nil ? downArrow : UIImage(), for: .normal)
+        self.startYear.setImage(viewData.startingYear == nil ? downArrow : UIImage(), for: .normal)
+        self.endYear.setImage(viewData.endingYear == nil ? downArrow : UIImage(), for: .normal)
     }
         
     @IBAction func startMonthTapped(_ sender: UIButton) {
@@ -36,12 +45,10 @@ class PositionTableViewCell: UITableViewCell {
     
     @IBAction func endMonthTapped(_ sender: UIButton) {
         onDateTapped?(.month(.ending))
-
     }
     
     @IBAction func startYearTapped(_ sender: UIButton) {
         onDateTapped?(.year(.starting))
-
     }
     
     @IBAction func endYearTapped(_ sender: UIButton) {

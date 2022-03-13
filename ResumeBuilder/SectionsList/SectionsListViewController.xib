@@ -19,9 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="G9d-Ri-5ZX">
-                    <rect key="frame" x="0.0" y="216" width="414" height="534"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="G9d-Ri-5ZX">
+                    <rect key="frame" x="0.0" y="216" width="414" height="474"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="dbp-FI-ioN"/>
@@ -31,6 +30,12 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="G9d-Ri-5ZX" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Ac7-mx-LJ5"/>
+                <constraint firstItem="G9d-Ri-5ZX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Fvh-6m-5M7"/>
+                <constraint firstItem="G9d-Ri-5ZX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="172" id="Qgv-q2-wc5"/>
+                <constraint firstItem="G9d-Ri-5ZX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oO9-nZ-AhH"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </view>
     </objects>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EducationViewController" customModule="ResumeBuilder" customModuleProvider="target">
+            <connections>
+                <outlet property="addEducation" destination="kIf-Jb-8Ro" id="NHL-Gx-u9q"/>
+                <outlet property="educationTableView" destination="Agx-rW-29w" id="IAe-zw-ijf"/>
+                <outlet property="educationTableViewHeight" destination="8Ye-Jg-r91" id="1Nw-C9-m2b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Agx-rW-29w">
+                    <rect key="frame" x="0.0" y="44" width="414" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="8Ye-Jg-r91"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ohC-u2-fOa"/>
+                        <outlet property="delegate" destination="-1" id="c9W-pv-umX"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-Jb-8Ro" userLabel="Add Education Details">
+                    <rect key="frame" x="0.0" y="70" width="187" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system" title="Add Education Details"/>
+                    <connections>
+                        <action selector="addEducationTapped:" destination="-1" eventType="touchUpInside" id="3T9-e5-zIr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kIf-Jb-8Ro" firstAttribute="leading" secondItem="Agx-rW-29w" secondAttribute="leading" id="9sU-DF-W6s"/>
+                <constraint firstItem="Agx-rW-29w" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="IH7-1I-zYO"/>
+                <constraint firstItem="Agx-rW-29w" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MRD-jl-6Kl"/>
+                <constraint firstItem="Agx-rW-29w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wc5-K4-QOd"/>
+                <constraint firstItem="kIf-Jb-8Ro" firstAttribute="top" secondItem="Agx-rW-29w" secondAttribute="bottom" constant="26" id="xoz-wN-ZHq"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

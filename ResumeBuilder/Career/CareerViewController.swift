@@ -65,7 +65,8 @@ class CareerViewController: UIViewController {
     func updateUIFromPicker() {
         if viewModel.pickerDataType == PickerDataType.yearsExperience {
             DispatchQueue.main.async {
-                self.yearsExperience.setTitle(String(String(self.viewModel.selectedYearsExperience ?? 0)), for: .normal)
+                self.yearsExperience.setTitle(String(self.viewModel.selectedYearsExperience ?? 0), for: .normal)
+                self.yearsExperience.setImage(UIImage(), for: .normal)
             }
         } else {
             DispatchQueue.main.async {

@@ -17,6 +17,9 @@ class SectionsListViewController: UIViewController {
 
         sectionListTableView.register(UINib(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: SectionTableViewCell.reuseID)
     }
+    
+    @IBAction func previewTapped(_ sender: UIButton) {
+    }
 
     func coordinateNavigation(for screenType: SectionsListViewModel.SectionType) {
         switch screenType {
@@ -29,8 +32,12 @@ class SectionsListViewController: UIViewController {
         case .skills:
             let skillsVC = SkillsViewController(nibName: "SkillsViewController", bundle: nil)
             navigationController?.pushViewController(skillsVC, animated: true)
-        case .education: break
-        case .projects: break
+        case .education:
+            let educationVC = EducationViewController(nibName: "EducationViewController", bundle: nil)
+            navigationController?.pushViewController(educationVC, animated: true)
+        case .projects:
+            let projectsVC = ProjectsViewController(nibName: "ProjectsViewController", bundle: nil)
+            navigationController?.pushViewController(projectsVC, animated: true)
         }
     }
     
