@@ -20,6 +20,13 @@ class ProjectTableViewCell: UITableViewCell {
         teamSizeTextField.delegate = self
         projectSummaryTextView.delegate = self
         self.onTextCommitted = onTextCommitted
+        setText(with: project)
+    }
+    
+    func setText(with project: Project) {
+        projectNameTextField.text = project.name
+        teamSizeTextField.text = project.teamSize
+        projectSummaryTextView.text = project.projectSummary
     }
 }
 
@@ -30,7 +37,7 @@ extension ProjectTableViewCell: UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         onTextCommitted?(textField.text ?? "", textField.tag)
-//        textField.resignFirstResponder()
+        textField.resignFirstResponder()
     }
 }
 
