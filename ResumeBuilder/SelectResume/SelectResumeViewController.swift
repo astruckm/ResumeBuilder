@@ -18,6 +18,7 @@ class SelectResumeViewController: UIViewController {
 
     @IBAction func createNewResumeTapped(_ sender: UIButton) {
         let sectionsListVC = SectionsListViewController(nibName: "SectionsListViewController", bundle: nil)
+        DefaultsManager.resetDefaults()
         self.navigationController?.pushViewController(sectionsListVC, animated: true)
     }
     

@@ -92,5 +92,12 @@ class DefaultsManager {
         }
         return projects
     }
+    
+    static func resetDefaults() {
+        let defaultsDict = UserDefaults.standard.dictionaryRepresentation()
+        defaultsDict.keys.forEach { key in
+            UserDefaults.standard.removeObject(forKey: key)
+        }
+    }
 
 }
