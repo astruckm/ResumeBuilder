@@ -29,8 +29,8 @@ extension ProjectTableViewCell: UITextFieldDelegate {
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textField.resignFirstResponder()
         onTextCommitted?(textField.text ?? "", textField.tag)
+//        textField.resignFirstResponder()
     }
 }
 

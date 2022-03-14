@@ -23,15 +23,16 @@ class PreviewViewController: UIViewController {
 
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(onDone))
         
-        viewModel.refresh = { [weak self] in
-            guard let self = self else { return }
-            self.photoImageView.image = self.viewModel.photo
-            self.basicInfoLabel.attributedText = self.viewModel.basicInfoText
-            self.objectiveLabel.attributedText = self.viewModel.objectiveText
-            self.workSummary.attributedText = self.viewModel.workSummaryText
-            self.skillsLabel.attributedText = self.viewModel.skillsText
-            self.educationLabel.attributedText = self.viewModel.educationText
-            self.projectDetailsLabel.attributedText = self.viewModel.projectDetailsText
+        viewModel.refresh = {
+            DispatchQueue.main.async {
+                self.photoImageView.image = self.viewModel.photo
+                self.basicInfoLabel.attributedText = self.viewModel.basicInfoText
+                self.objectiveLabel.attributedText = self.viewModel.objectiveText
+                self.workSummary.attributedText = self.viewModel.workSummaryText
+                self.skillsLabel.attributedText = self.viewModel.skillsText
+                self.educationLabel.attributedText = self.viewModel.educationText
+                self.projectDetailsLabel.attributedText = self.viewModel.projectDetailsText
+            }
         }
     }
     

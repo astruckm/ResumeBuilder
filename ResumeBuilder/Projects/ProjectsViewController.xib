@@ -21,8 +21,16 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3B-Eh-o9J">
+                    <rect key="frame" x="0.0" y="60" width="121" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system" title="Add Project"/>
+                    <connections>
+                        <action selector="addProjectTapped:" destination="-1" eventType="touchUpInside" id="bkb-Dg-mur"/>
+                    </connections>
+                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-R6-3wA">
-                    <rect key="frame" x="0.0" y="76" width="414" height="0.0"/>
+                    <rect key="frame" x="0.0" y="107" width="414" height="0.0"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" id="cUu-MZ-FbR"/>
@@ -32,22 +40,14 @@
                         <outlet property="delegate" destination="-1" id="alB-83-Ta0"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3B-Eh-o9J">
-                    <rect key="frame" x="0.0" y="102" width="121" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system" title="Add Project"/>
-                    <connections>
-                        <action selector="addProjectTapped:" destination="-1" eventType="touchUpInside" id="bkb-Dg-mur"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="S3B-Eh-o9J" firstAttribute="leading" secondItem="hY2-R6-3wA" secondAttribute="leading" id="7wH-hF-NpB"/>
-                <constraint firstItem="hY2-R6-3wA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="8J9-Aa-5hI"/>
+                <constraint firstItem="S3B-Eh-o9J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="FuC-1r-Csj"/>
                 <constraint firstItem="hY2-R6-3wA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="YmD-CT-q9g"/>
-                <constraint firstItem="S3B-Eh-o9J" firstAttribute="top" secondItem="hY2-R6-3wA" secondAttribute="bottom" constant="26" id="k3Q-QC-TsQ"/>
+                <constraint firstItem="hY2-R6-3wA" firstAttribute="top" secondItem="S3B-Eh-o9J" secondAttribute="bottom" constant="16" id="dWj-2H-qgr"/>
                 <constraint firstItem="hY2-R6-3wA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wGE-Fp-fSc"/>
             </constraints>
             <point key="canvasLocation" x="139" y="62"/>
