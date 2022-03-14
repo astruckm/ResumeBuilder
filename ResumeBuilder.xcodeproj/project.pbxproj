@@ -36,6 +36,7 @@
 		7249070B27D6414F0009F7DF /* ResumeBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249070A27D6414F0009F7DF /* ResumeBuilderTests.swift */; };
 		7249071527D6414F0009F7DF /* ResumeBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249071427D6414F0009F7DF /* ResumeBuilderUITests.swift */; };
 		7249071727D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249071627D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift */; };
+		72610D7727DE99AC0059BF23 /* PreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72610D7627DE99AC0059BF23 /* PreviewViewModel.swift */; };
 		7288960E27DBAD2D0051A94C /* SectionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288960C27DBAD2D0051A94C /* SectionsListViewController.swift */; };
 		7288960F27DBAD2D0051A94C /* SectionsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7288960D27DBAD2D0051A94C /* SectionsListViewController.xib */; };
 		7288961327DC027D0051A94C /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288961127DC027D0051A94C /* SectionTableViewCell.swift */; };
@@ -105,6 +106,7 @@
 		7249071027D6414F0009F7DF /* ResumeBuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeBuilderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7249071427D6414F0009F7DF /* ResumeBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilderUITests.swift; sourceTree = "<group>"; };
 		7249071627D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72610D7627DE99AC0059BF23 /* PreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewModel.swift; sourceTree = "<group>"; };
 		7288960C27DBAD2D0051A94C /* SectionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsListViewController.swift; sourceTree = "<group>"; };
 		7288960D27DBAD2D0051A94C /* SectionsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionsListViewController.xib; sourceTree = "<group>"; };
 		7288961127DC027D0051A94C /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				7227561127DE0ACC00F4D5A1 /* PreviewViewController.swift */,
 				7227561227DE0ACC00F4D5A1 /* PreviewViewController.xib */,
+				72610D7627DE99AC0059BF23 /* PreviewViewModel.swift */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				7288961627DC17C90051A94C /* SectionsListViewModel.swift in Sources */,
 				724906F327D6414D0009F7DF /* SceneDelegate.swift in Sources */,
 				722755F927DDF9E600F4D5A1 /* SkillsViewModel.swift in Sources */,
+				72610D7727DE99AC0059BF23 /* PreviewViewModel.swift in Sources */,
 				7227560527DE016F00F4D5A1 /* ProjectsViewModel.swift in Sources */,
 				7227560227DE015000F4D5A1 /* ProjectsViewController.swift in Sources */,
 				722755F627DDEAAA00F4D5A1 /* SkillTableViewCell.swift in Sources */,
