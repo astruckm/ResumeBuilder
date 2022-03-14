@@ -89,7 +89,7 @@ extension PreviewViewModel {
         let objectiveHeaderAttributes: [NSAttributedString.Key: Any] = [.font: headerFont]
         let attributedHeader = NSAttributedString(string: "Career Objective", attributes: objectiveHeaderAttributes)
         careerObjectiveText.append(attributedHeader)
-        careerObjectiveText.append(NSAttributedString(string: "\n\n"))
+        careerObjectiveText.append(NSAttributedString(string: "\n"))
         careerObjectiveText.append(NSAttributedString(string: objectiveText))
         
         return careerObjectiveText
@@ -101,7 +101,7 @@ extension PreviewViewModel {
         let workSummaryHeaderAttributes: [NSAttributedString.Key: Any] = [.font: headerFont]
         let attributedHeader = NSAttributedString(string: "Work Summary", attributes: workSummaryHeaderAttributes)
         workSummaryText.append(attributedHeader)
-        workSummaryText.append(NSAttributedString(string: "\n\n"))
+        workSummaryText.append(NSAttributedString(string: "\n"))
         for position in positions {
             let positionStr = (position.startingMonth ?? "") + " " + (position.startingYear ?? "") + " - " + (position.endingMonth ?? "") + " " + (position.endingYear ?? "") + "\t" + (position.title ?? "")
             workSummaryText.append(NSAttributedString(string: positionStr))
@@ -116,9 +116,9 @@ extension PreviewViewModel {
         let skillsHeaderAttributes: [NSMutableAttributedString.Key: Any] = [.font: headerFont]
         let attributedHeader = NSAttributedString(string: "Skills", attributes: skillsHeaderAttributes)
         skillsText.append(attributedHeader)
-        skillsText.append(NSAttributedString(string: "\n\n"))
+        skillsText.append(NSAttributedString(string: "\n"))
         for skill in skills {
-            skillsText.append(NSAttributedString(string: "• \(skill)"))
+            skillsText.append(NSAttributedString(string: "• \(skill)\n"))
         }
         
         return skillsText
@@ -130,7 +130,7 @@ extension PreviewViewModel {
         let educationHeaderAttributes: [NSAttributedString.Key: Any] = [.font: headerFont]
         let attributedHeader = NSAttributedString(string: "Education", attributes: educationHeaderAttributes)
         educationText.append(attributedHeader)
-        educationText.append(NSAttributedString(string: "\n\n"))
+        educationText.append(NSAttributedString(string: "\n"))
         for degree in degrees {
             let degreeStr = (degree.year ?? "") + "\t" + (degree.school ?? "") + " " + (degree.educationClass ?? "") + " " + (degree.gradeAverage ?? "") + (degree.status == nil ? "" : ", " + (degree.status ?? ""))
             educationText.append(NSAttributedString(string: degreeStr))
@@ -145,7 +145,7 @@ extension PreviewViewModel {
         let projectDetailsAttributes: [NSAttributedString.Key: Any] = [.font: headerFont]
         let attributedHeader = NSAttributedString(string: "Project Details", attributes: projectDetailsAttributes)
         projectDetailsText.append(attributedHeader)
-        projectDetailsText.append(NSAttributedString(string: "\n\n"))
+        projectDetailsText.append(NSAttributedString(string: "\n"))
         for project in projects {
             let projectStr = (project.name ?? "") + " " + (project.teamSize == nil ? "" : "(\(project.teamSize ?? "")") + "\n\t" + "\(project.projectSummary ?? "")"
             projectDetailsText.append(NSAttributedString(string: projectStr))

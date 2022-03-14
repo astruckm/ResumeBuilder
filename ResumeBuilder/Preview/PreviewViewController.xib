@@ -40,7 +40,6 @@
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvS-Ce-5gG" userLabel="Basic Info Label">
                                     <rect key="frame" x="20" y="0.0" width="160" height="120"/>
-                                    <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="120" id="AJJ-fi-S0y"/>
                                         <constraint firstAttribute="width" constant="160" id="K9e-a3-wpa"/>
@@ -51,7 +50,6 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iT-eN-Wpq" userLabel="Objective Label">
                                     <rect key="frame" x="20" y="132" width="372.5" height="100"/>
-                                    <color key="backgroundColor" red="0.61960784310000006" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="e6L-kE-7QW"/>
                                     </constraints>
@@ -61,7 +59,6 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4F-z8-EI0" userLabel="Work Summary Label">
                                     <rect key="frame" x="20" y="244" width="372.5" height="0.0"/>
-                                    <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
