@@ -241,14 +241,7 @@
 				724906F227D6414D0009F7DF /* SceneDelegate.swift */,
 				7288961827DC1AFE0051A94C /* Constants.swift */,
 				7288962927DCD8DB0051A94C /* Extensions */,
-				7288961727DC1AAA0051A94C /* SelectResume */,
-				7288961027DC02520051A94C /* SectionsList */,
-				7288961A27DC3F780051A94C /* BasicInfo */,
-				7288961F27DC995A0051A94C /* Career */,
-				722755EF27DDE89B00F4D5A1 /* Skills */,
-				722755FA27DE003E00F4D5A1 /* Education */,
-				722755FB27DE005500F4D5A1 /* Projects */,
-				7227561027DE099D00F4D5A1 /* Preview */,
+				72610D7827DED4520059BF23 /* UI Modules */,
 				7227561527DE0D6800F4D5A1 /* Model */,
 				7235DD3127D8F97500B94410 /* Persistence */,
 				7288962027DC996A0051A94C /* Support Files */,
@@ -272,6 +265,21 @@
 				7249071627D6414F0009F7DF /* ResumeBuilderUITestsLaunchTests.swift */,
 			);
 			path = ResumeBuilderUITests;
+			sourceTree = "<group>";
+		};
+		72610D7827DED4520059BF23 /* UI Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7288961727DC1AAA0051A94C /* SelectResume */,
+				7288961027DC02520051A94C /* SectionsList */,
+				7288961A27DC3F780051A94C /* BasicInfo */,
+				7288961F27DC995A0051A94C /* Career */,
+				722755EF27DDE89B00F4D5A1 /* Skills */,
+				722755FA27DE003E00F4D5A1 /* Education */,
+				722755FB27DE005500F4D5A1 /* Projects */,
+				7227561027DE099D00F4D5A1 /* Preview */,
+			);
+			path = "UI Modules";
 			sourceTree = "<group>";
 		};
 		7288961027DC02520051A94C /* SectionsList */ = {

@@ -8,6 +8,7 @@
 import Foundation
 import CoreData
 
+// Currently unused, did not finish this implementation, so just using UserDefaults for now
 class DataController {
     static let shared = DataController { }
     var resume: NSManagedObject?
@@ -45,10 +46,6 @@ class DataController {
         } catch let error as NSError {
             print("Unable to save to managed object context: \(error.localizedDescription)\n\(error.userInfo)")
         }
-    }
-    
-    func saveResume(address: String = "", objective: String = "", email: String = "", name: String = "", phoneNumber: String = "", photo: Data = Data(), skills: [String] = [], yearsExperience: Int = -1) {
-        
     }
     
     func loadResume() -> [NSManagedObject]? {
